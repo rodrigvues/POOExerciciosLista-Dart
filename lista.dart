@@ -25,4 +25,34 @@ void main() {
 
   var frutasInvertidas = frutas.reversed.toList();
   print(frutasInvertidas);
+
+  List<List<int>> matriz = [
+    [2,2,3], [4,5,6], [7,8,9]
+  ];
+  print(matriz[1][2]);
+  print(matriz[0][1]);
+  print(matriz);
+
+  List<List<int>> matrizsegunda = List.generate(3, (i) => List.filled(3,0));
+  
+  int valor = 1;
+  for (int i = 0; i < matrizsegunda.length; i++) {
+    for (int j = 0; j < matrizsegunda[i].length; j++) {
+      matrizsegunda[i][j] = valor++;
+    }
+  }
+  
+  print(matrizsegunda);
+
+  List<int> lista1 = [1,2,3];
+  List<int> lista2 = [1,2,3];
+  var lista3 = null;
+
+  Map estados = Map();
+  estados["SC"]= "Santa Catarina";
+  estados["PR"]= "Parana";
+  estados["RS"]= "Rio Grande do Sul";
+  estados["SP"]= "São Paulo";
+  print(estados.keys);
+
 }
