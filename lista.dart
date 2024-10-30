@@ -55,4 +55,9 @@ void main() {
   estados["SP"]= "São Paulo";
   print(estados.keys);
 
+  Map<String, dynamic> usuarios = Map();
+  usuarios["nome"] = "Vitor";
+  usuarios["idade"] = 40;
+
+  print(usuarios);
 }
